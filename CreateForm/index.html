@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>マラソン大会！</title>
+    </head>
+    <h1>マラソン申し込みフォーム</h1>
+    <form action="/janbaraya">
+
+        <div>
+            <label for="userlastname">姓</label>
+            <input type="text" name="userlastname" id="userlastname" required>
+            <label for="username">名</label>
+            <input type="text" name="username" id="username" required>
+        </div>
+        
+        <p>参加するマラソンを選択：</p>
+        <div>
+            <input type="radio" name="kind" id="enjoy" value="enjoy">
+            <label for="enjoy">楽しく走ろう5km</label>
+        </div>
+        <div><input type="radio" name="kind" id="half" value="half">
+            <label for="half">ハーフマラソン</label>
+        </div>
+        <div><input type="radio" name="kind" id="full" value="full">
+            <label for="full">フルマラソン</label>
+        </div>
+        
+        <div>
+            <label for="email">メールアドレス</label>
+            <input type="email" name="email" id="email" required>
+            <label for="passward">パスワード</label>
+            <input type="password" name="passward" id="passward" required>
+        </div>
+
+        <div>
+            <label for="age">参加する年代</label>
+            <select name="age" id="age">
+                <option value="-18" selected>アンダー18</option>
+                <option value="18-25">18歳〜25歳</option>
+                <option value="26-35">26歳〜35歳</option>
+                <option value="36-45">36歳〜45歳</option>
+                <option value="46-55">46歳〜55歳</option>
+            </select>
+        </div>
+
+        <button type="submit">登録</button>
+
+        
+        
+    </form>
+    
+    <body>
+        
+    </body>
+</html>
